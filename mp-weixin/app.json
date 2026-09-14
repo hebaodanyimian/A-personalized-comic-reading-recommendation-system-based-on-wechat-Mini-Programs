@@ -1,0 +1,110 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/forget/forget",
+    "pages/center/center",
+    "pages/user-info/user-info",
+    "pages/news-detail/news-detail",
+    "pages/zuojia/list",
+    "pages/zuojia/add-or-update",
+    "pages/zuojia/detail",
+    "pages/yonghu/list",
+    "pages/yonghu/add-or-update",
+    "pages/yonghu/detail",
+    "pages/manhualeixing/list",
+    "pages/manhualeixing/add-or-update",
+    "pages/manhualeixing/detail",
+    "pages/manhuaxiaoshuo/list",
+    "pages/manhuaxiaoshuo/add-or-update",
+    "pages/manhuaxiaoshuo/detail",
+    "pages/manhuaxiaoshuo/chapter",
+    "pages/manhuazuopin/list",
+    "pages/manhuazuopin/add-or-update",
+    "pages/manhuazuopin/detail",
+    "pages/newstype/list",
+    "pages/newstype/add-or-update",
+    "pages/newstype/detail",
+    "pages/news/list",
+    "pages/news/add-or-update",
+    "pages/storeup/list",
+    "pages/storeup/add-or-update",
+    "pages/storeup/detail",
+    "pages/aboutus/list",
+    "pages/aboutus/add-or-update",
+    "pages/aboutus/detail",
+    "pages/systemintro/list",
+    "pages/systemintro/add-or-update",
+    "pages/systemintro/detail",
+    "pages/discussmanhuaxiaoshuo/list",
+    "pages/discussmanhuaxiaoshuo/add-or-update",
+    "pages/discussmanhuaxiaoshuo/detail",
+    "pages/chaptermanhuaxiaoshuo/list",
+    "pages/chaptermanhuaxiaoshuo/add-or-update",
+    "pages/chaptermanhuaxiaoshuo/detail",
+    "pages/bookmarkmanhuaxiaoshuo/list",
+    "pages/bookmarkmanhuaxiaoshuo/add-or-update",
+    "pages/bookmarkmanhuaxiaoshuo/detail",
+    "pages/discussmanhuazuopin/list",
+    "pages/discussmanhuazuopin/add-or-update",
+    "pages/discussmanhuazuopin/detail",
+    "common/linkOthers/linkOthers"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "基于微信小程序的个性化漫画阅读推荐系统的设计与实现",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#D4D4D4",
+    "selectedColor": "#FFFFFF",
+    "borderStyle": "white",
+    "backgroundColor": "#03B882",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabs/index.png",
+        "selectedIconPath": "static/tabs/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/manhuaxiaoshuo/list",
+        "iconPath": "/static/tabs/icon1.png",
+        "selectedIconPath": "/static/tabs/icon1_act.png",
+        "text": "漫画小说"
+      },
+      {
+        "pagePath": "pages/manhuazuopin/list",
+        "iconPath": "/static/tabs/icon2.png",
+        "selectedIconPath": "/static/tabs/icon2_act.png",
+        "text": "漫画作品"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "iconPath": "static/tabs/mine.png",
+        "selectedIconPath": "static/tabs/mine1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取地址"
+    }
+  },
+  "requiredPrivateInfos": [
+    "chooseLocation",
+    "getLocation"
+  ],
+  "usingComponents": {
+    "uni-load-more": "/components/mescroll-uni/mescroll-uni",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "z-swiper-item": "/components/zebra-swiper/components/z-swiper-item/z-swiper-item",
+    "z-swiper": "/components/zebra-swiper/components/z-swiper/z-swiper",
+    "music-play": "/components/musicPlay/musicPlay"
+  }
+}

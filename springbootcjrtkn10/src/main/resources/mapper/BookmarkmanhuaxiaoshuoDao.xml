@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.BookmarkmanhuaxiaoshuoDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.entity.BookmarkmanhuaxiaoshuoEntity" id="bookmarkmanhuaxiaoshuoMap">
+        <result property="chapterid" column="chapterid"/>
+        <result property="chapternum" column="chapternum"/>
+        <result property="chaptertitle" column="chaptertitle"/>
+        <result property="userid" column="userid"/>
+        <result property="progress" column="progress"/>
+    </resultMap>
+
+	<select id="selectListVO"
+		resultType="com.entity.vo.BookmarkmanhuaxiaoshuoVO" >
+		SELECT * FROM bookmarkmanhuaxiaoshuo  bookmarkmanhuaxiaoshuo         
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectVO"
+		resultType="com.entity.vo.BookmarkmanhuaxiaoshuoVO" >
+		SELECT  bookmarkmanhuaxiaoshuo.* FROM bookmarkmanhuaxiaoshuo  bookmarkmanhuaxiaoshuo 	
+ 		<where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+
+    <select id="selectListView"
+		resultType="com.entity.view.BookmarkmanhuaxiaoshuoView" >
+
+		SELECT  bookmarkmanhuaxiaoshuo.* FROM bookmarkmanhuaxiaoshuo  bookmarkmanhuaxiaoshuo 	        
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.entity.view.BookmarkmanhuaxiaoshuoView" >
+		SELECT * FROM bookmarkmanhuaxiaoshuo  bookmarkmanhuaxiaoshuo <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+
+
+</mapper>
